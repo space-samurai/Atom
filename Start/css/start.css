@@ -1,0 +1,13 @@
+
+body {}
+
+header {}
+
+footer {}
+
+.container {}
+
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;}
