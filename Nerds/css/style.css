@@ -2,5 +2,35 @@ body {
     font-size: 14px;
     line-height: 24px;
     font-family: "PT Sans Narrow",sans-serif;
-    color: #000000;
-    background-color: #F0FFFF ; }
+    color: #000000;}
+
+.item-hover {
+    display:none;
+}
+
+.item:hover .item-hover {
+    display:block;
+}
+.top-decoration {
+    height: 20px;
+    width:  240px;
+    background: #a4a4a4;
+}
+
+.item:hover .top-decoration {
+    background: #505050;
+}
+
+.item-content {
+    width: 240px;
+    height: 240px;
+    background: #cbcbcb;
+}
+
+.item-hover {
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ffffff;
+}
