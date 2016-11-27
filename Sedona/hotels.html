@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sedona</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <!-- Здесь еще лого -->
+            <nav class="main-navigation">
+                <ul>
+                    <li><a href="#">Информация</a></li>
+                    <li><a href="#">Фото и Видео</a></li>
+                    <li><a href="#">Карта штата</a></li>
+                    <li><a href="#">Гостиницы</a></li>
+                </ul>
+            </nav>
+    </header>
+
+
+    <main>
+        <div class="filter-form">
+            <div class="container">
+                <form class="hotels-filter" action="index.html" method="post">
+                    <div class="filter-column">
+                        <legend>Инфраструктура:</legend>
+                        <label>
+                            <input type="checkbox" name="bassin" value="" checked>
+                            Бассейн
+                        </label>
+                        <label>
+                            <input type="checkbox" name="pakring" value="">
+                            Парковка
+                        </label>
+                        <label>
+                            <input type="checkbox" name="wi-fi" value="">
+                            Wi-Fi
+                        </label>
+                    </div>
+                    <div class="filter-column">
+                        <legend>Тип жилья:</legend>
+                        <label>
+                            <input type="checkbox" name="hotel" value="" checked>
+                            Гостиница
+                        </label>
+                        <label>
+                            <input type="checkbox" name="motel" value="" checked>
+                            Мотель
+                        </label>
+                        <label>
+                            <input type="checkbox" name="apartment" value="" checked>
+                            Апартаменты
+                        </label>
+                    </div>
+                    <div class="filter-column">
+                        <legend>Стоимость в сутки (р):</legend>
+                        <div class="price-filter">
+                            <label>
+                                От
+                                <input type="text" name="min-price" value="0">
+                            </label>
+                            <label>
+                                До
+                                <input type="text" name="max-price" value="3000">
+                            </label>
+                        </div>
+                        <div class="price-drag-n-drop">
+                        </div>
+                        <button type="submit" name="filter-btn">Показать</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class=" search-results">
+            <div class="head-search-results">
+                <div class="container">
+
+                    <div class="search-count">
+                        <span>Найдено:</span>
+                        <span class="count">3</span>
+                    </div>
+
+                    <div class="sorting">
+                        <span>Сортировка:</span>
+                        <a href="#">По цене</a>
+                        <a href="#">По типу</a>
+                        <a href="#">По рейтингу</a>
+                        <a href="#">\</a>
+                        <a href="#">/</a>
+                    </div>
+                </div>
+            </div>
+            <div class="search-results-items">
+                <article class="item">
+                    <div class="container">
+                        <img src="#" alt="">
+                        <b class="item-title">Amara Resort and Spa</b>
+                        <span class="item-type">Гостиница</span>
+                        <span class="item-price">От 3500 р.</span>
+                        <a href="#">Подробнее</a>
+                        <a href="#">Забронировать</a>
+                        <div class="item-rating">
+                            <img src="#" alt="Stars">
+                            <span>Рейтинг: 8,5</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="item">
+                    <div class="container">
+                        <img src="#" alt="">
+                        <b class="item-title">Desert Quail Inn</b>
+                        <span class="item-type">Мотель</span>
+                        <span class="item-price">От 2000 р.</span>
+                        <a href="#">Подробнее</a>
+                        <a href="#">Забронировать</a>
+                        <div class="item-rating">
+                            <img src="#" alt="Stars">
+                            <span>Рейтинг: 8,9</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="item">
+                    <div class="container">
+                        <img src="#" alt="">
+                        <b class="item-title">Villas at Poco <Diablo></Diablo></b>
+                        <span class="item-type">Апартаменты</span>
+                        <span class="item-price">от 4000 р.</span>
+                        <a href="#">Подробнее</a>
+                        <a href="#">Забронировать</a>
+                        <div class="item-rating">
+                            <img src="#" alt="Stars">
+                            <span>Рейтинг: 9,2</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <footer class="main-footer">
+
+            <section class="footer-hash">
+                <span>#visitsedona</span>
+            </section>
+            <section class="footer-social">
+                <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+                <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+                <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+            </section>
+            <section class="footer-copyright">
+                <span>Website by</span>
+                <a class="btn" href="#" alt="">
+                    <img src="#" alt="HTML Academy">
+                </a>
+            </section>
+
+    </footer>
+
+</body>
+
+</html>
