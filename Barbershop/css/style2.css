@@ -1,0 +1,158 @@
+body {
+    min-width:940px;
+    min-height:1131px;
+
+    margin: 0;
+    padding: 0;
+
+    background: url("../img/shop-bg-demo.jpg") no-repeat center top;
+    color: #000000;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+
+    padding: 0 10px;
+/*Убрать*/
+    background-color: rgba(255, 0, 76, 0.2);
+
+}
+
+.main-header {
+    margin-bottom: 55px;
+
+    background-color: #000000;
+
+}
+
+.main-navigation {
+    width: 780px;
+
+    float: left;
+/*Убрать*/
+    background-color:rgba(206, 209, 37, 0.4);
+
+    min-height:70px;
+}
+
+.user-block {
+    width: 140px;
+    float: right;
+/*Убрать*/
+    background-color:rgba(206, 209, 37, 0.1);
+
+    min-height:70px;
+}
+
+.shop-header {
+    margin-bottom: 50px;
+
+
+    min-height: 75px;
+    background-color:rgba(50, 205, 112, 0.5) ;
+}
+
+.shop-content {
+    padding: 0;
+    height: 680px;
+
+    background-color: rgba(255, 240, 103, 0.3);
+}
+
+.filter-bar {
+    width: 220px;
+    float: left;
+
+
+    min-height: 575px;
+    background-color:rgba(147, 0, 255, 0.42);
+}
+
+.right-side {
+    padding: 0;
+    width: 700px;
+    height: inherit;
+    float: right;
+
+    background-color:rgba(29, 59, 154, 0.5);
+}
+
+.item-list {
+    min-height: 590px;
+    font-size: 0px;
+}
+
+
+
+.item {
+    display: inline-block;
+    width: 220px;
+    height: 285px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    vertical-align: top;
+    font-size: 16px;
+    background-color:rgba(50, 205, 112, 0.5) ;
+}
+
+.item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.pagination {
+    margin-bottom: 0;
+    min-height: 40px;
+    background-color:rgba(50, 205, 112, 0.5) ;
+}
+
+
+
+
+.main-footer {
+    margin-top: 50px;
+    background-color: #202020;
+}
+
+.main-footer .container {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.footer-contacts {
+    width: 320px;
+    margin-right: 60px;
+    float: left;
+/*Убрать*/
+    min-height: 90px;
+    background-color: hsla(52, 27%, 38%, 0.4);
+
+}
+
+.footer-social {
+    width: 180px;
+        float: left;
+/*Убрать*/
+    min-height: 90px;
+    background-color: hsla(52, 27%, 38%, 0.4);
+
+}
+
+.footer-copyright {
+    width: 140px;
+        float: right;
+/*Убрать*/
+    min-height: 90px;
+    background-color: hsla(52, 27%, 38%, 0.4);
+
+}
+
+
+
+li {
+    display: inline-block;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;}
