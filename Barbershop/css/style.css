@@ -1,6 +1,173 @@
 body {
-    font-size: 14px;
-    line-height: 24px;
-    font-family: "PT Sans Narrow",sans-serif;
+    min-width:940px;
+    min-height:1762px;
+
+    margin: 0;
+    padding: 0;
+
+    background: url("../img/body-bg.jpg") no-repeat center top;
     color: #ffffff;
-    background: #111111 url("../img/body-bg.jpg") no-repeat center top; }
+}
+
+.main-header {
+    margin-bottom: 60px;
+
+    background-color: #000000;
+}
+
+.container {
+    width:940px;
+    margin: 0 auto;
+
+    padding: 0 10px;
+
+    border: 1px dashed white;
+}
+
+.main-navigation {
+    width:780px;
+
+    float: left;
+
+    background-color: hsla(52, 27%, 38%, 0.4);
+
+/*Убрать*/
+    min-height:70px
+}
+
+.user-block {
+    width:140px;
+
+    float: right;
+
+    background-color: hsla(52, 27%, 38%, 0.4);
+
+/*Убрать*/
+    min-height:70px
+}
+
+.index-logo {
+    width: 368px;
+    height: 204px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+
+.features {
+    margin-bottom: 80px;
+
+    background-color: rgba(68, 194, 52, 0.2);
+
+}
+
+.features-item {
+    width: 300px;
+/*Убрать*/
+    min-height: 175px;
+
+    margin-right: 20px;
+
+    float: left;
+
+
+    background-color: hsla(52, 27%, 38%, 0.4);
+
+}
+
+.features-item:last-child {
+    margin-right: 0;
+}
+
+.index-content {
+    padding: 50px 80px;
+    margin-bottom: 35px;
+
+    background-color: #c8c8c8;
+
+}
+
+.index-content-left {
+    width: 380px;
+
+    float: left;
+
+    background-color: rgba(38, 113, 212, 0.4);
+/*Убрать*/
+    min-height: 330px;
+}
+
+.index-content-right {
+    width: 300px;
+
+    float: right;
+
+    background-color: rgba(38, 113, 212, 0.4);
+/*Убрать*/
+    min-height: 330px;
+}
+
+.main-footer {
+    margin-top: 65px;
+
+    background-color: #202020;
+}
+
+.main-footer .container {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+
+
+.footer-contacts {
+    width: 320px;
+/*Убрать*/
+    min-height: 90px;
+
+    margin-right: 60px;
+
+    float: left;
+
+    background-color: hsla(52, 27%, 38%, 0.4);
+
+}
+
+.footer-social {
+    width: 180px;
+/*Убрать*/
+    min-height: 90px;
+
+    float: left;
+
+    background-color: hsla(52, 27%, 38%, 0.4);
+
+}
+
+.footer-copyright {
+    width: 140px;
+/*Убрать*/
+    min-height: 90px;
+
+    float: right;
+
+    background-color: hsla(52, 27%, 38%, 0.4);
+
+}
+
+
+
+
+
+
+
+
+
+li {
+    display: inline-block;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;}
