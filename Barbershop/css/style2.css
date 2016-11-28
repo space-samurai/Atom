@@ -1,6 +1,6 @@
 body {
     min-width:940px;
-    min-height:1131px;
+    min-height:1173px;
 
     margin: 0;
     padding: 0;
@@ -12,19 +12,14 @@ body {
 .container {
     width: 940px;
     margin: 0 auto;
-
     padding: 0 10px;
-/*Убрать*/
-    background-color: rgba(255, 0, 76, 0.2);
-
 }
 
 .main-header {
     margin-bottom: 55px;
-
     background-color: #000000;
+    }
 
-}
 
 .main-navigation {
     width: 780px;
@@ -55,7 +50,7 @@ body {
 
 .shop-content {
     padding: 0;
-    height: 680px;
+    min-height: 680px;
 
     background-color: rgba(255, 240, 103, 0.3);
 }
@@ -72,7 +67,7 @@ body {
 .right-side {
     padding: 0;
     width: 700px;
-    height: inherit;
+    min-height: inherit;
     float: right;
 
     background-color:rgba(29, 59, 154, 0.5);
@@ -88,7 +83,7 @@ body {
 .item {
     display: inline-block;
     width: 220px;
-    height: 285px;
+    min-height: 285px;
     margin-right: 20px;
     margin-bottom: 20px;
     vertical-align: top;

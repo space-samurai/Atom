@@ -1,0 +1,140 @@
+body {
+    min-width:940px;
+    min-height:1159px;
+
+    margin: 0;
+    padding: 0;
+
+    background: url("../img/price-bg-demo.jp") no-repeat center top;
+    color: #000000;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+
+}
+
+.main-header {
+    margin-bottom: 55px;
+    background-color: #000000;
+    }
+
+
+.main-navigation {
+    width: 780px;
+
+    float: left;
+/*Убрать*/
+    background-color:#282828;
+    min-height:70px;
+}
+
+.user-block {
+    width: 140px;
+    float: right;
+/*Убрать*/
+    background-color:#282828;
+
+    min-height:70px;
+}
+
+.price-header {
+    margin-bottom: 50px;
+
+    min-height: 75px;
+    background-color:rgba(50, 205, 112, 0.5) ;
+}
+
+.price-content {
+    margin-bottom: 80px;
+    min-height: 540px;
+
+    background-color: rgba(37, 254, 117, 0.32);
+}
+
+.price-content-title     {
+    font-size: 40px;
+    text-align: center;
+    min-height: 50px;
+    margin-bottom: 50px;
+}
+
+.content-row-1 {
+    margin-bottom: 60px;
+/*Убрать*/
+min-height: 220px;
+
+}
+
+.price-block-1,
+.price-block-3 {
+    width: 390px;
+    float: left;
+    margin-right: 90px;
+    background-color:rgba(126, 0, 231, 0.41);
+}
+
+.price-block-2,
+.price-block-4 {
+    width: 460px;
+    float: right;
+    background-color:rgba(126, 0, 231, 0.41);
+}
+
+
+
+
+
+
+
+.main-footer {
+    margin-top: 50px;
+    background-color: #202020;
+}
+
+.main-footer .container {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.footer-contacts {
+    width: 320px;
+    margin-right: 60px;
+    float: left;
+/*Убрать*/
+    min-height: 90px;
+    background-color: grey;
+
+}
+
+.footer-social {
+    width: 180px;
+        float: left;
+/*Убрать*/
+    min-height: 90px;
+    background-color: grey;
+
+}
+
+.footer-copyright {
+    width: 140px;
+        float: right;
+/*Убрать*/
+    min-height: 90px;
+    background-color: grey;
+
+}
+
+
+
+.main-navigation li,
+.breadcrumbs li {
+    display: inline-block;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
