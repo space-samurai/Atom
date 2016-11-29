@@ -1,44 +1,155 @@
 body {
-    min-width:940px;
+    min-width:960px;
     min-height:1173px;
 
     margin: 0;
     padding: 0;
 
-    background: url("../img/shop-bg-demo.jpg") no-repeat center top;
+    background:#f8f5f2 url("") no-repeat center top;
     color: #000000;
+
+    font-family: "PT Sans Narrow", "Arial", sans-serif ;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
 }
 
 .container {
     width: 940px;
+
     margin: 0 auto;
     padding: 0 10px;
 }
 
 .main-header {
     margin-bottom: 55px;
+/*Цвет текста лучше дублировать на всякий случай*/
     background-color: #000000;
+    color: #ffffff;
     }
 
 
 .main-navigation {
-    width: 780px;
+    width:780px;
 
     float: left;
-/*Убрать*/
-    background-color:rgba(206, 209, 37, 0.4);
+}
 
-    min-height:70px;
+
+.main-navigation a {
+    display: block;
+    padding: 25px 20px;
+
+/*Для ссылок отдельное приглашение, цвет и стиль, иначе не сработает*/
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.main-navigation a:hover {
+    background-color: #242424;
+}
+
+
+
+.main-navigation ul {      /*Для списка меню сразу так делать*/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    font-size: 0px;     /*Убираем пробелы между блоками*/
+}
+
+.main-navigation li {
+    display: inline-block;
+    vertical-align: top;
+
+    font-size: 16px;    /*Возвращаем шрифт*/
+    line-height: 20px;
 }
 
 .user-block {
-    width: 140px;
-    float: right;
-/*Убрать*/
-    background-color:rgba(206, 209, 37, 0.1);
+    max-width:140px;
 
-    min-height:70px;
+    float: right;
 }
+
+.login {
+    display: inline-block;
+    position: relative;
+
+    vertical-align: top;
+    padding: 25px 20px 25px 50px;
+
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.login:hover {
+    background-color: #242424;
+}
+
+.login::before {
+    content: "" ;
+
+    position: absolute;
+    top: 28px;
+    left: 20px;
+
+    width: 18px;
+    height: 16px;
+    background: url("../img/sprite.png") no-repeat center;
+    background-position: -141px -12px;
+    opacity: 0.3;
+}
+
+.login:hover::before {
+    opacity: 1;
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+
+    padding: 10px 33px;
+    margin-right: 16px;
+
+    color: #ffffff;
+    background: #000000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    font-family: "PT Sans Narrow", "Arial", sans-serif ;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn:active,
+.btn:hover {
+    background: #663d15;
+}
+
+.btn.disabled,
+.btn:disabled {
+    cursor: default;
+    opacity: 0.5;
+}
+
+.btn.disabled:hover,
+.btn:disabled:hover {
+    background: #000000;
+}
+
+
+
+
 
 .shop-header {
     margin-bottom: 50px;
@@ -105,47 +216,107 @@ body {
 
 
 .main-footer {
-    margin-top: 50px;
-    background-color: #202020;
+    margin-top: 65px;
+
+    background: #202020;
+    color: #ffffff;
 }
 
 .main-footer .container {
     padding-top: 60px;
     padding-bottom: 40px;
 }
+
+
+
 .footer-contacts {
     width: 320px;
     margin-right: 60px;
     float: left;
-/*Убрать*/
-    min-height: 90px;
-    background-color: hsla(52, 27%, 38%, 0.4);
+}
 
+.footer-contacts a {
+    color: #ffffff;
+}
+
+.footer-contacts a:hover {
+    text-decoration: none;
 }
 
 .footer-social {
     width: 180px;
-        float: left;
-/*Убрать*/
-    min-height: 90px;
-    background-color: hsla(52, 27%, 38%, 0.4);
+    float: left;
+    text-align: center;
+}
 
+.footer-social p {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.social-btn {
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    margin: 0 2px;
+
+    background: #000000 url("../img/sprite.png") no-repeat center;
+    font-size: 0px;
+
+    transition:
+        background-position 0.5s,
+        background-color 0.5s ;
+}
+.social-btn-fb {
+    background-position: -43px -43px;
+}
+.social-btn-vk {
+    background-position: 0px -43px;
+}
+.social-btn-inst {
+    background-position: -86px -43px;
+}
+
+
+.social-btn:hover {
+    background-color: #ffffff;
+}
+
+.social-btn-fb:hover {
+    background-position: -43px 0;
+}
+.social-btn-vk:hover {
+    background-position: 0px 0;
+}
+.social-btn-inst:hover {
+    background-position: -86px 0;
 }
 
 .footer-copyright {
-    width: 140px;
-        float: right;
-/*Убрать*/
-    min-height: 90px;
-    background-color: hsla(52, 27%, 38%, 0.4);
+    max-width: 180px;
 
+    float: right;
 }
+
+.footer-copyright p {
+    margin: 0;
+    margin-bottom: 15px;
+
+    text-align: center;
+}
+
+.footer-copyright .btn {
+    margin-right: 0;
+}
+
+
 
 
 
 li {
     display: inline-block;
 }
+
 
 .clearfix::after {
     content: "";

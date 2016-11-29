@@ -1,116 +1,339 @@
 body {
-    min-width:940px;
+    min-width:960px; /*по макету*/
     min-height:1762px;
 
     margin: 0;
     padding: 0;
-
-    background: url("../img/body-bg.jpg") no-repeat center top;
+    /*цвет подложки задавать на всякий случай*/
+    background:#000000 url("../img/body-bg.jpg") no-repeat center top;
     color: #ffffff;
-}
 
-.main-header {
-    margin-bottom: 60px;
-
-    background-color: #000000;
+    font-family: "PT Sans Narrow", "Arial", sans-serif ;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
 }
 
 .container {
     width:940px;
+
     margin: 0 auto;
-
     padding: 0 10px;
+}
 
-    border: 1px dashed white;
+.main-header {
+    margin-bottom: 60px;
+/*Цвет текста лучше дублировать на всякий случай*/
+    background-color: #000000;
+    color: #ffffff;
 }
 
 .main-navigation {
     width:780px;
 
     float: left;
+}
 
-    background-color: hsla(52, 27%, 38%, 0.4);
 
-/*Убрать*/
-    min-height:70px
+.main-navigation a {
+    display: block;
+    padding: 25px 20px;
+
+/*Для ссылок отдельное приглашение, цвет и стиль, иначе не сработает*/
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.main-navigation a:hover {
+    background-color: #242424;
+}
+
+
+
+.main-navigation ul {      /*Для списка меню сразу так делать*/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    font-size: 0px;     /*Убираем пробелы между блоками*/
+}
+
+.main-navigation li {
+    display: inline-block;
+    vertical-align: top;
+
+    font-size: 16px;    /*Возвращаем шрифт*/
+    line-height: 20px;
 }
 
 .user-block {
-    width:140px;
+    max-width:140px;
 
     float: right;
+}
 
-    background-color: hsla(52, 27%, 38%, 0.4);
+.login {
+    display: inline-block;
+    position: relative;
 
-/*Убрать*/
-    min-height:70px
+    vertical-align: top;
+    padding: 25px 20px 25px 50px;
+
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.login:hover {
+    background-color: #242424;
+}
+
+.login::before {
+    content: "" ;
+
+    position: absolute;
+    top: 28px;
+    left: 20px;
+
+    width: 18px;
+    height: 16px;
+    background: url("../img/sprite.png") no-repeat center;
+    background-position: -141px -12px;
+    opacity: 0.3;
+}
+
+.login:hover::before {
+    opacity: 1;
 }
 
 .index-logo {
     width: 368px;
     height: 204px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     margin-bottom: 25px;
+}
+
+.index-logo img { /*На всякий случай*/
+    width: 368px;
+    height: 204px;
 }
 
 .features {
     margin-bottom: 80px;
-
-    background-color: rgba(68, 194, 52, 0.2);
-
 }
 
 .features-item {
     width: 300px;
-/*Убрать*/
-    min-height: 175px;
 
     margin-right: 20px;
 
     float: left;
 
-
-    background-color: hsla(52, 27%, 38%, 0.4);
-
+    text-align: center;
 }
 
 .features-item:last-child {
     margin-right: 0;
 }
 
+.feature-name {
+    display: block;
+    position: relative;
+
+    margin-bottom: 30px;
+    padding-bottom: 35px;
+
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.feature-name::after {
+    content: "";
+
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -10px;
+
+    width: 20px;
+    height: 20px;
+
+    background-color: #ffffff;
+    transform: rotate(45deg);
+}
+
+.features-item p {
+    margin: 10px;
+    margin-bottom: 0;
+}
+
 .index-content {
     padding: 50px 80px;
     margin-bottom: 35px;
 
-    background-color: #c8c8c8;
+    background: #f8f5f2 url("../img/center-shadow.png") no-repeat center;
+    color: #000000;
+}
 
+.index-content-title {
+    font-size: 30px;
+    line-height: 42px;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.index-content p {
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.news-preview {
+    margin: 0;
+    margin-bottom: 25px;
+
+    padding: 0;
+    padding-right: 35px;
+
+    list-style: none;
+}
+
+.news-preview li {
+margin-bottom: 25px;
+}
+
+.news-preview p {
+    margin-bottom: 0;
+}
+
+time {
+    font-weight: normal;
+    text-transform: none;
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+
+    padding: 10px 33px;
+    margin-right: 16px;
+
+    color: #ffffff;
+    background: #000000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    font-family: "PT Sans Narrow", "Arial", sans-serif ;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn:active,
+.btn:hover {
+    background: #663d15;
+}
+
+.btn.disabled,
+.btn:disabled {
+    cursor: default;
+    opacity: 0.5;
+}
+
+.btn.disabled:hover,
+.btn:disabled:hover {
+    background: #000000;
 }
 
 .index-content-left {
     width: 380px;
 
     float: left;
-
-    background-color: rgba(38, 113, 212, 0.4);
-/*Убрать*/
-    min-height: 330px;
 }
 
 .index-content-right {
     width: 300px;
 
     float: right;
-
-    background-color: rgba(38, 113, 212, 0.4);
-/*Убрать*/
-    min-height: 330px;
 }
+
+.gallery {
+    position: relative;
+
+    height: 260px;
+}
+
+.gallery-content {
+    height: 164px;
+    margin: 0;
+    border: 7px solid #ffffff;
+    background-color: #cccccc;
+
+}
+.gallery-content img {
+    width: 286px;
+    height: 164px;
+}
+
+.gallery .btn {
+    position: absolute;
+    bottom: 0;
+
+    width: 140;
+    margin: 0;
+}
+
+.gallery-prev {
+    left: 0;
+}
+
+.gallery-next {
+    right: 0;
+}
+
+.appointment-form input {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    width: 106px;
+    padding: 7px 15px;
+
+    background-color: #f9f6f3;
+    border: 2px solid #000000;
+    outline: none;
+
+    font-family: "PT Sans Narrow", "Arial", sans-serif ;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.appointment-form input:nth-child(2n) {
+    margin-right: 0;
+}
+
+.appointment-form input:focus {
+    border: 2px solid #663b15;
+}
+
+.appointment-form .btn {
+    clear: both;
+    width: 100%;
+}
+
 
 .main-footer {
     margin-top: 65px;
 
-    background-color: #202020;
+    background: #202020;
 }
 
 .main-footer .container {
@@ -122,49 +345,82 @@ body {
 
 .footer-contacts {
     width: 320px;
-/*Убрать*/
-    min-height: 90px;
-
     margin-right: 60px;
-
     float: left;
+}
 
-    background-color: hsla(52, 27%, 38%, 0.4);
+.footer-contacts a {
+    color: #ffffff;
+}
 
+.footer-contacts a:hover {
+    text-decoration: none;
 }
 
 .footer-social {
     width: 180px;
-/*Убрать*/
-    min-height: 90px;
-
     float: left;
+    text-align: center;
+}
 
-    background-color: hsla(52, 27%, 38%, 0.4);
+.footer-social p {
+    margin: 0;
+    margin-bottom: 15px;
+}
 
+.social-btn {
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    margin: 0 2px;
+
+    background: #000000 url("../img/sprite.png") no-repeat center;
+    font-size: 0px;
+
+    transition:
+        background-position 0.5s,
+        background-color 0.5s ;
+}
+.social-btn-fb {
+    background-position: -43px -43px;
+}
+.social-btn-vk {
+    background-position: 0px -43px;
+}
+.social-btn-inst {
+    background-position: -86px -43px;
+}
+
+
+.social-btn:hover {
+    background-color: #ffffff;
+}
+
+.social-btn-fb:hover {
+    background-position: -43px 0;
+}
+.social-btn-vk:hover {
+    background-position: 0px 0;
+}
+.social-btn-inst:hover {
+    background-position: -86px 0;
 }
 
 .footer-copyright {
-    width: 140px;
-/*Убрать*/
-    min-height: 90px;
+    max-width: 180px;
 
     float: right;
-
-    background-color: hsla(52, 27%, 38%, 0.4);
-
 }
 
+.footer-copyright p {
+    margin: 0;
+    margin-bottom: 15px;
 
+    text-align: center;
+}
 
-
-
-
-
-
-
-li {
-    display: inline-block;
+.footer-copyright .btn {
+    margin-right: 0;
 }
 
 .clearfix::after {
