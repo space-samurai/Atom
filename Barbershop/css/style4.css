@@ -297,7 +297,7 @@ body {
     padding-left: 25px;
 }
 
-.price-block-1 li:before {
+.price-block-1 li::before {
     content: "";
 
     display: block;
