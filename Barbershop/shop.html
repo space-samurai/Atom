@@ -15,10 +15,10 @@
         <div class="container clearfix">
             <nav class="main-navigation">
                 <ul>
-                    <li><a href="#">Главная</a></li>
+                    <li><a href="index.html">Главная</a></li>
                     <li><a href="#">Информация</a></li>
                     <li><a href="#">Новости</a></li>
-                    <li><a href="#">Прайс-лист</a></li>
+                    <li><a href="price.html">Прайс-лист</a></li>
                     <li><a href="#" class="active">Магазин</a></li>
                     <li><a href="#">Контакты</a></li>
                 </ul>
@@ -34,8 +34,8 @@
             <h1>Средства для ухода</h1>
             <div class="breadcrumbs">
                 <ul>
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">Магазин</a></li>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="shop.html">Магазин</a></li>
                     <li><span>Средства для ухода</span></li>
                 </ul>
             </div>
@@ -47,38 +47,46 @@
 
                     <form class="fiter-form" action="index.html" method="get">
                         <legend>Производители:</legend>
-                        <input type="checkbox" name="baxter-of-california" value="" checked>
-                            <label for="baxter-of-california">Baxter of California</label>
 
-                        <input type="checkbox" name="mr-natty" value="">
-                            <label for="mr-natty">Mr Natty</label>
+                            <label>
+                                <input type="checkbox" name="baxter-of-california" value="" checked>
+                                <span>Baxter of California</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="mr-natty" value="">
+                                <span>Mr Natty</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="suavecito" value="" checked>
+                                <span>Suavecito</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="malin-goetz" value="">
+                                <span>Malin+Goetz</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="murrays" value="">
+                                <span>Murray’s</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="american-crew" value="" checked>
+                                <span>American Crew</span>
+                            </label>
 
-                        <input type="checkbox" name="suavecito" value="" checked>
-                            <label for="suavecito">Suavecito</label>
-
-                        <input type="checkbox" name="malin-goetz" value="">
-                            <label for="malin-goetz">Malin+Goetz</label>
-
-                        <input type="checkbox" name="murrays" value="">
-                            <label for="murrays">Murray’s</label>
-
-                        <input type="checkbox" name="american-crew" value="" checked>
-                            <label for="american-crew">American Crew</label>
-
-                        <legend>Группы товаров:</legend>
+                        <legend class="legend-group">Группы товаров:</legend>
                         <label>
                             <input type="radio" name="item-group" value="Бритвенные принадлежности">
-                            Бритвенные принадлежности
+                            <span>Бритвенные принадлежности</span>
                         </label>
 
                         <label>
                             <input type="radio" name="item-group" value="Средства для ухода" checked>
-                            Средства для ухода
+                            <span>Средства для ухода</span>
                         </label>
 
                         <label>
                             <input type="radio" name="item-group" value="Аксессуары">
-                            Аксессуары
+                            <span>Аксессуары</span>
                         </label>
 
                         <button type="button" class="btn btn-filter">Показать</button>
@@ -88,24 +96,24 @@
             <div class="right-side">
                 <section class="item-list">
                     <div class="item">
-                        <img  src="#" alt="" class="item-img">
+                        <img  src="img/item-1.png" alt="" class="item-img" width="220px" height="165px" href>
                         <div class="item-name">
-                            <a href="#">
-                                <span>Набор для путешествий</span>
+                            <a href="item.html">
+                                <span>Набор для путешествий</span><br>
                                 <span>«Baxter of California»</span>
                             </a>
                         </div>
                         <div class="buy-block">
                             <span class="price">2 900 руб.</span>
-                            <a href="#" class="btn buy-btn">Купить</a>
+                            <a href="item.html" class="btn buy-btn">Купить</a>
                         </div>
                     </div>
 
                     <div class="item">
-                        <img  src="#" alt="" class="item-img">
+                        <img  src="img/item-2.png" alt="" class="item-img" width="220px" height="165px">
                         <div class="item-name">
                             <a href="#">
-                                <span>Увлажняющий кондиционер</span>
+                                <span>Увлажняющий кондиционер</span><br>
                                 <span>«Baxter of California»</span>
                             </a>
                         </div>
@@ -116,10 +124,10 @@
                     </div>
 
                     <div class="item">
-                        <img  src="#" alt="" class="item-img">
+                        <img  src="img/item-3.png" alt="" class="item-img" width="220px" height="165px">
                         <div class="item-name">
                             <a href="#">
-                                <span>Гель для волос</span>
+                                <span>Гель для волос</span><br>
                                 <span>«SUAVECITO»</span>
                             </a>
                         </div>
@@ -130,24 +138,24 @@
                     </div>
 
                     <div class="item">
-                        <img  src="#" alt="" class="item-img">
+                        <img  src="img/item-4.png" alt="" class="item-img" width="220px" height="165px">
                         <div class="item-name">
                             <a href="#">
-                                <span>Глина для укладки волос</span>
+                                <span>Глина для укладки волос</span><br>
                                 <span>«American crew»</span>
                             </a>
                         </div>
                         <div class="buy-block">
                             <span class="price">500 руб.</span>
-                            <a href="#" class="btn buy-btn">Купить</a>
+                            <a href="img/item-1.png" class="btn buy-btn">Купить</a>
                         </div>
                     </div>
 
                     <div class="item">
-                        <img  src="#" alt="" class="item-img">
+                        <img  src="img/item-5.png" alt="" class="item-img" width="220px" height="165px">
                         <div class="item-name">
                             <a href="#">
-                                <span>Гель для волос</span>
+                                <span>Гель для волос</span><br>
                                 <span>«AMERICAN CREW»</span>
                             </a>
                         </div>
@@ -158,10 +166,10 @@
                     </div>
 
                     <div class="item">
-                        <img  src="#" alt="" class="item-img">
+                        <img  src="img/item-6.png" alt="" class="item-img" width="220px" height="165px">
                         <div class="item-name">
                             <a href="#">
-                                <span>Набор для бритья</span>
+                                <span>Набор для бритья</span><br>
                                 <span>«Baxter of California»</span>
                             </a>
                         </div>
@@ -174,10 +182,10 @@
 
                 <nav class="pagination">
                     <ul>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#" class="active-page">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
+                        <li><a href="#" class="page-btn">1</a></li>
+                        <li><a href="#" class="page-btn active-page">2</a></li>
+                        <li><a href="#" class="page-btn">3</a></li>
+                        <li><a href="#" class="page-btn">4</a></li>
                     </ul>
                 </nav>
             </div>

@@ -22,6 +22,18 @@ body {
     padding: 0 10px;
 }
 
+
+
+
+
+
+/* --------- СТИЛИ ГЛАВНОГО МЕНЮ ---------- */
+
+
+
+
+
+
 .main-header {
     margin-bottom: 55px;
 /*Цвет текста лучше дублировать на всякий случай*/
@@ -52,7 +64,9 @@ body {
 
 
 
-.main-navigation ul {      /*Для списка меню сразу так делать*/
+.main-navigation ul,
+.breadcrumbs ul,
+.pagination ul {      /*Для списка меню сразу так делать*/
     margin: 0;
     padding: 0;
     list-style: none;
@@ -67,6 +81,7 @@ body {
     font-size: 16px;    /*Возвращаем шрифт*/
     line-height: 20px;
 }
+
 
 .user-block {
     max-width:140px;
@@ -108,6 +123,16 @@ body {
 .login:hover::before {
     opacity: 1;
 }
+
+
+
+
+
+/* ---------СТИЛИ КНОПОК----------- */
+
+
+
+
 
 .btn {
     display: inline-block;
@@ -151,66 +176,268 @@ body {
 
 
 
+
+/* ------ СТИЛИ ЗАГОЛОВКА И ХЛЕБНЫХ КРОШЕК ------- */
+
+
+
+
+
 .shop-header {
     margin-bottom: 50px;
 
-
-    min-height: 75px;
-    background-color:rgba(50, 205, 112, 0.5) ;
+    min-width: 300px;
 }
+
+.shop-header  h1 {
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.breadcrumbs li {
+    display: inline-block;
+    vertical-align: top;
+
+    margin: 0;
+
+    font-size: 14px;    /*Возвращаем шрифт*/
+    line-height: 20px;
+
+}
+
+.breadcrumbs a {
+    position: relative;
+    padding-right: 25px;
+    margin-right: 15px;
+/*Для ссылок отдельное приглашение, цвет и стиль, иначе не сработает*/
+    color: #000000;
+    text-decoration: none;
+
+}
+
+.breadcrumbs a::after {
+    content: "";
+
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -3px;
+
+    width: 7px;
+    height: 7px;
+
+    background-color: #000000;
+    transform: rotate(45deg);
+}
+
+.breadcrumbs span {
+    color: #939393;
+}
+
+
+
+/* ---------СТИЛИ ОСНОВНОГО КОНТЕНТА----------- */
+
+
+
+
+/* -------- СТИЛИ ФИЛЬТРА ---------*/
 
 .shop-content {
     padding: 0;
-    min-height: 680px;
-
-    background-color: rgba(255, 240, 103, 0.3);
+    margin: 0;
 }
 
 .filter-bar {
     width: 220px;
+
     float: left;
-
-
-    min-height: 575px;
-    background-color:rgba(147, 0, 255, 0.42);
 }
 
 .right-side {
-    padding: 0;
     width: 700px;
-    min-height: inherit;
+
     float: right;
 
-    background-color:rgba(29, 59, 154, 0.5);
+    padding: 0;
+
+
+
+
 }
+
+.fiter-form legend {
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 30px;
+}
+
+.fiter-form legend.legend-group {
+    margin-top: 50px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+label span {
+    padding-left: 30px;
+}
+
+.btn-filter {
+    margin-top: 40px;
+}
+
+/* -------- СТИЛИ СПИСКА ТОВАРОВ ---------*/
+
 
 .item-list {
     min-height: 590px;
     font-size: 0px;
+    margin-bottom: 25px;
 }
-
-
 
 .item {
     display: inline-block;
+    position: relative;
+    vertical-align: top;
+
     width: 220px;
     min-height: 285px;
+
+
     margin-right: 20px;
     margin-bottom: 20px;
-    vertical-align: top;
+
+    background-color: #ffffff;
+
     font-size: 16px;
-    background-color:rgba(50, 205, 112, 0.5) ;
+    line-height: 24px;
+
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Параметры тени */
+}
+
+.item-img {
+    width: 220px;
+    height: 165px;
+
+    margin: 0;
+
+    background-color: #e5e5e5;
+
+}
+
+.item-name {
+    margin-top: 5px;
+    padding-left: 15px;
+    font-size: 14px;
+    line-height: 18px;
+
+}
+
+.item-name a {
+    color: #000000;
+    text-decoration: none;
+}
+.item-name span:first-child {
+    text-transform: none;
 }
 
 .item:nth-child(3n) {
     margin-right: 0;
 }
 
-.pagination {
-    margin-bottom: 0;
-    min-height: 40px;
-    background-color:rgba(50, 205, 112, 0.5) ;
+.buy-block {
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    width: 190px;
+    font-size: 0px;
+
 }
+.buy-block .price  {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+
+    width: 112px;
+
+    padding: 10px 0;
+
+    background: #e5e5e5;
+
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.buy-btn {
+    width: 78px;
+
+    margin: 0px;
+    padding:10px 0;
+
+
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+/* -------- СТИЛИ ПАГИНАЦИИ---------*/
+
+
+
+
+
+.pagination {
+    margin: 0;
+    min-height: 40px;
+}
+
+.pagination li {
+    display: inline-block;
+    vertical-align: top;
+
+    margin: 0;
+
+    font-size: 14px;    /*Возвращаем шрифт*/
+    line-height: 20px;
+
+}
+a.page-btn {
+    display: inline-block;
+    text-align: center;
+
+    width: 43px;
+    padding: 10px 0;
+    margin: 0 3px;
+
+    background-color: #000000;
+
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.page-btn:hover {
+    background-color: #663b15;
+}
+.pagination a.active-page {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+
+
+
+
+/* ------ СТИЛИ ФУТЕРА ------- */
+
+
 
 
 
@@ -313,9 +540,10 @@ body {
 
 
 
-li {
-    display: inline-block;
-}
+
+
+
+
 
 
 .clearfix::after {
