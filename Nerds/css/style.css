@@ -1,6 +1,6 @@
 body {
     min-width: 890px; /*по макету*/
-    height: 2256px;
+    min-height: 2256px;
 
     margin: 0;
     padding: 0;
@@ -20,6 +20,11 @@ body {
     margin: 0 auto;
     padding: 0 10px;
 }
+
+
+
+/* --------- СТИЛИ КНОПОК   ----------- */
+
 
 
 
@@ -46,11 +51,21 @@ body {
     text-decoration: none;
 }
 
-.write-us {
-    width: 100%;
+.btn:hover {
+    background: #d6494d;
+}
+.btn:active {
+    background: #b63538;
+    box-shadow: inset 0 3px 0 rgba(0,0,0,0.2);
 }
 
+.service-item:nth-child(2) .btn {background-color: #00ca74;}
+.service-item:nth-child(2) .btn:hover {background: #01a25e;}
+.service-item:nth-child(2) .btn:active {background: #009053;}
 
+.service-item:nth-child(3) .btn {background: #efc84a;}
+.service-item:nth-child(3) .btn:hover {background: #d6ae2c;}
+.service-item:nth-child(3) .btn:active {background: #c09b24;}
 
 
 
@@ -66,13 +81,12 @@ body {
 /*Цвет текста лучше дублировать на всякий случай*/
     background-color: #eeeeee;
     color: #000000;
-
-    min-height: 436px;    /* Временно */
 }
 
 
 
 /* --------- СТИЛИ МЕНЮ   ----------- */
+
 
 
 
@@ -83,16 +97,19 @@ body {
     float: left;
 
     margin-right: 180px;
+    margin-top: 28px;
 }
 
 .main-navigation {
-
+    min-width: 400px;
     float: left;
 
-    background-color: rgba(79, 72, 236, 0.44);   /* Временно */
-    min-height: 84px;    /* Временно */
-    min-width: 400px;
+    padding-top: 60px;
+
+    margin-bottom: 40px;
 }
+
+
 .main-navigation ul {
     list-style: none;
     margin: 0;
@@ -100,21 +117,42 @@ body {
 }
 .main-navigation li {
     display: inline-block;
+    margin-right: 45px;
 }
 
-.main-navigation a {
+.main-navigation a,
+.cart-block a {
+    padding-bottom: 5px;
 
+    color: #000000;
+    font-size: 14px;
+    line-height: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 .cart-block {
-    float: right;
-
-    background-color: rgba(79, 72, 236, 0.44);   /* Временно */
-    min-height: 84px;    /* Временно */
     min-width: 100px;
+
+    float: right;
+    padding-top: 60px;
+    margin-bottom: 40px;
+
+    text-align: right;
 }
 
-
+.main-navigation a:hover,
+.cart-block a:hover {
+    color: #fb565a;
+}
+.main-navigation a:active,
+.cart-block a:active {
+    color: #999999;
+}
+.main-navigation a.active,
+.cart-block a.active {
+    border-bottom: 2px solid #fb565a;
+}
 
 
 /* --------- СТИЛИ СЛАЙДЕРА  ----------- */
@@ -122,22 +160,115 @@ body {
 
 
 .slider {
+    clear: both;
+
+    position: relative;
 
     width: 880px;
     height: 310px;
 
-    margin-top: 0 auto;
+    margin: 0;
+}
 
-    clear: both;
+.slider input[type="radio"] {
+    /*position:absolute;*/
+}
 
-    background-color: rgba(33, 207, 231, 0.19);    /* Временно */
+.slider-controls {
+    position: absolute;
+    bottom: 95px;
+    left:50%;
+
+    width: 200px;
+    height: 10px;
+
+    margin-left: -100px;
+
+    text-align: center;
+
+    z-index: 999;
+}
+
+.slider-controls label {
+    display: inline-block;
+    vertical-align: top;
+
+    width: 4px;
+    height: 4px;
+
+    margin: 0 3px;
+
+    background: #ffffff;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    cursor: pointer;
+}
+
+#radio-1:checked ~ .slider-controls label[for="radio-1"],
+#radio-2:checked ~ .slider-controls label[for="radio-2"],
+#radio-3:checked ~ .slider-controls label[for="radio-3"] {
+    background: #c1c1c1;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+    /*background-color: #eeeeee;*/
+}
+.slide-text {
+    width: 470px;
+    padding: 30px 0;
+}
+.slide b {
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 700;
+    color: #000000;
+}
+.slider-btn {
+    box-sizing: border-box;
+    width: 240px;
+}
+
+.slide:nth-child(1) {
+    background-image: url("../img/slider-1.png");
+    background-repeat: no-repeat;
+    background-position: 100% 10px;
+}
+.slide:nth-child(2) {
+    background-image: url("../img/slider-2.png");
+    background-repeat: no-repeat;
+    background-position: 100% 15px;
+}
+.slide:nth-child(3) {
+    background-image: url("../img/slider-3.png");
+    background-repeat: no-repeat;
+    background-position: 100% 0px;
+}
+
+
+
+.slide {
+    display: none;
+}
+
+#radio-1:checked ~ .slides .slide:nth-child(1),
+#radio-2:checked ~ .slides .slide:nth-child(2),
+#radio-3:checked ~ .slides .slide:nth-child(3) {
+	display: block;
 }
 
 
 
 
-
 /* --------- СТИЛИ КОЛОНОК УСЛУГ   ----------- */
+
 
 
 
@@ -172,6 +303,12 @@ body {
     line-height: 22px;
     margin-bottom: 25px;
 }
+
+
+/* --------- СТИЛИ БЛОКА ОПИСАНИЯ КОМПАНИИ   ----------- */
+
+
+
 
 .about-block {
     margin-bottom: 70px;
@@ -231,6 +368,10 @@ body {
     background: url("../img/list-style.jpg") no-repeat 0 0;
 }
 
+
+/* --------- ПАРТНЕРЫ  ----------- */
+
+
 .patners-block {
     min-height: 170px;
     margin-bottom: 85px;
@@ -270,7 +411,7 @@ body {
 
 
 
-
+/* --------- СТИЛИ КОНТАКТОВ  ---------- */
 
 
 
@@ -302,6 +443,10 @@ body {
     line-height: 20px;
 }
 
+.write-us {
+    width: 100%;
+}
+
 .map-block .container {
     position: relative;
 }
@@ -321,7 +466,7 @@ body {
 
 
 
-
+/* --------- СТИЛИ ФУТЕРА   ----------- */
 
 
 
@@ -368,20 +513,18 @@ body {
     background-position: -77px -34px;
 }
 
-.social-btn:hover {
-    background-color: #e1e1e1;
-}
-
-.social-btn-fb:hover {
-    background-position: -34px 0;
-}
-.social-btn-vk:hover {
-    background-position: 9px 0;
-}
+.social-btn-fb:hover,
+.social-btn-vk:hover,
 .social-btn-inst:hover {
-    background-position: -77px 0;
+    background-color: #fb565a;
 }
 
+.social-btn-fb:active,
+.social-btn-vk:active,
+.social-btn-inst:active {
+    background-color: #d6494d;
+    box-shadow: inset 0 3px 0 rgba(0,0,0,0.2);
+}
 
 
 }
@@ -404,66 +547,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-.item-hover {
-    display:none;
-}
-
-.item:hover .item-hover {
-    display:block;
-}
-.top-decoration {
-    height: 20px;
-    width:  240px;
-    background: #a4a4a4;
-}
-
-.item:hover .top-decoration {
-    background: #505050;
-}
-
-.item-content {
-    width: 240px;
-    height: 240px;
-    background: #cbcbcb;
-}
-
-.item-hover {
-    width: 200px;
-    height: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    background: #ffffff;
-}
-*/
 
 .clearfix::after {
     content: "";

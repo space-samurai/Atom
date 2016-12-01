@@ -1,0 +1,620 @@
+body {
+    min-width: 890px; /*по макету*/
+    min-height: 2246px;
+
+    margin: 0;
+    padding: 0;
+    /*цвет подложки задавать на всякий случай*/
+    background: #ffffff ;
+    color: #000000;
+
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.container {
+    width: 880px;
+
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+
+
+/* --------- СТИЛИ КНОПОК   ----------- */
+
+
+
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    padding: 13px 40px;
+
+    color: #ffffff;
+    background: #fb565a;
+
+    overflow: hidden;
+    outline: none;
+    border: none;
+    border-radius:3px;
+    cursor: pointer;
+
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #d6494d;
+}
+.btn:active {
+    background-color: #b63538;
+    box-shadow: inset 0 3px 0 rgba(0,0,0,0.2);
+}
+
+
+
+
+/* --------- СТИЛИ ХЭДЕРА   ----------- */
+
+
+
+
+.main-header {
+    margin-bottom: 80px;
+/*Цвет текста лучше дублировать на всякий случай*/
+    background-color: #eeeeee;
+    color: #000000;
+}
+
+.header-text  {
+    clear: both;
+    padding: 70px 80px;
+    margin: 0;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+/* --------- СТИЛИ МЕНЮ   ----------- */
+
+
+
+
+
+.main-logo {
+    width: 140px;
+    height: 57px;
+    float: left;
+
+    margin-right: 180px;
+    margin-top: 28px;
+}
+
+.main-navigation {
+    min-width: 400px;
+    float: left;
+
+    padding-top: 60px;
+
+
+
+}
+
+.main-navigation ul,
+.pagination ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navigation li,
+.pagination li {
+    display: inline-block;
+}
+.main-navigation li {
+    margin-right: 45px;
+}
+
+.main-navigation a,
+.cart-block a {
+    padding-bottom: 5px;
+
+    color: #000000;
+    font-size: 14px;
+    line-height: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.cart-block {
+    min-width: 100px;
+
+    float: right;
+
+    padding-top: 60px;
+
+    text-align: right;
+}
+
+.main-navigation a:hover,
+.cart-block a:hover {
+    color: #fb565a;
+}
+.main-navigation a:active,
+.cart-block a:active {
+    color: #999999;
+}
+.main-navigation a.active,
+.cart-block a.active {
+    border-bottom: 2px solid #fb565a;
+}
+
+
+
+/* --------- СТИЛИ ОСНОВНОГО БЛОКА   ----------- */
+
+
+
+main .container {
+    margin-bottom: 80px;
+}
+
+
+.filter-bar {
+    width: 240px;
+    float: left;
+    margin-right: 80px;
+}
+
+.item-list-block {
+    width: 560px;
+    float: right;
+}
+
+
+
+
+
+
+/* --------- СТИЛИ ФИЛЬТРА ТОВАРОВ  ---------- */
+
+.price-filter {
+    text-align: right;
+    margin-bottom: 45px;
+}
+
+legend {
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.drag-n-drop {
+    width: 240px;
+    height: 80px;
+
+    margin-bottom: 15px;
+
+    border-radius: 3px;
+    background: #f1f1f1;
+
+}
+
+.price-filter input {
+    width: 80px;
+    height: 38px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+
+    margin-left: 8px;
+    background-color: #f1f1f1;
+
+    text-align: center;
+}
+.fiter-form .price-filter label {
+    display: inline;
+
+    margin-right: 10px;
+
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+
+}
+
+.fiter-form label {
+    display: block;
+
+    padding: 9px 0;
+}
+.fiter-form label + legend {
+    margin-top: 35px;
+}
+
+.fiter-form button {
+    margin-top: 50px;
+    background-color: #f1f1f1;
+    color: #000000;
+}
+.fiter-form button:hover {
+    background-color: #e5e5e5;
+}
+.fiter-form button:active {
+    background-color: #d5d5d5;
+    box-shadow: inset 0 3px 0 rgba(0,0,0,0.2);
+}
+
+
+
+
+
+
+
+
+
+
+/* ---- СОРТИРОВКА  ----- */
+
+
+
+
+.sorting {
+    margin-bottom: 25px;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.sorting a {
+    margin-left: 40px;
+
+    color: #b3b3b3;
+    text-decoration: none;
+    border-bottom: 1px dotted #00ca74;
+}
+.sorting a:hover {
+    color: #000000;
+    border-bottom: 1px dotted #00ca74;
+}
+
+.sorting a:active {
+    color: #000000;
+    border-bottom: none;
+}
+.sorting a.active {
+    color: #000000;
+    border-bottom: none;
+}
+
+.sorting a:last-child {
+    margin-left: 0px;
+}
+
+
+/* ---- СЕТКА ТОВАРОВ  ---- */
+
+
+.item-list {
+    font-size: 0px;
+    line-height: 0px;
+}
+
+.item {
+    display: inline-block;
+    vertical-align: top;
+
+    width: 240px;
+    height: 270px;
+
+    margin-right: 80px;
+    margin-bottom: 80px;
+    padding: 0;
+}
+
+.item:nth-child(2n) {
+    margin-right: 0;
+}
+
+.top-decoration {
+    position: relative;
+    height: 30px;
+    width:  240px;
+    background: #f1f1f1;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+}
+
+
+.top-decoration .circle {
+    display: inline-block;
+
+    width: 10px;
+    height: 10px;
+
+    margin:10px 0;
+    margin-right: 6px;
+
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+.top-decoration .circle:first-child {
+    margin-left: 12px;
+}
+
+
+
+.item-content {
+    display: block;
+    width: 240px;
+    height: 240px;
+
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.item:nth-child(1) .item-content {
+    background:#f1f1f1 url("../img/item-image-1.png") no-repeat center; }
+.item:nth-child(2) .item-content {
+    background:#f1f1f1 url("../img/item-image-2.png") no-repeat center; }
+.item:nth-child(3) .item-content {
+    background:#f1f1f1 url("../img/item-image-3.png") no-repeat center; }
+.item:nth-child(4) .item-content {
+    background:#f1f1f1 url("../img/item-image-4.png") no-repeat center; }
+.item:nth-child(5) .item-content {
+    background:#f1f1f1 url("../img/item-image-5.png") no-repeat center; }
+.item:nth-child(6) .item-content {
+    background:#f1f1f1 url("../img/item-image-6.png") no-repeat center; }
+
+.item-hover {
+    display:none;
+}
+
+.item:hover .item-hover {
+    display:block;
+
+}
+.item:hover .top-decoration {
+    background: #797979;
+}
+
+
+
+.item-hover {
+    width: 200px;
+    height: 200px;
+
+    background: #ffffff;
+
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.item-hover a {
+    display: block;
+    text-align: center;
+
+    position: relative;
+
+    width: 140px;
+    height: 140px;
+
+    padding: 30px;
+
+    color: #000000;
+    text-decoration: none;
+
+}
+.item-hover b {
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.item-hover span {
+    width: 140px;
+    box-sizing: border-box;
+
+    position: absolute;
+    bottom: 30px;
+    left:30px;
+}
+.item-hover span:hover {
+
+
+}
+
+
+/* --------- СТИЛИ ПАГИНАЦИИ  ---------- */
+
+
+
+.pagination a {
+    background-color: #f1f1f1;
+    color: #000000;
+    padding: 13px 16px;
+    margin: 0 2px;
+}
+
+.pagination li:last-child a {
+    padding: 13px 40px;
+}
+
+
+.pagination a:hover {
+    background-color: #e5e5e5;
+}
+.pagination a:active {
+    background-color: #d5d5d5;
+    box-shadow: inset 0 3px 0 rgba(0,0,0,0.2);
+}
+
+.pagination a.active,
+.pagination a.active:hover,
+.pagination a.active:active {
+    padding: 11px 14px;
+    background-color: #ffffff;
+    border: 2px solid #f1f1f1;
+    box-shadow: none;
+}
+
+
+/* --------- СТИЛИ КОНТАКТОВ  ---------- */
+
+
+
+
+.map-block {
+    height: 420px;
+
+    background: url("../img/map-background.png") no-repeat center;
+}
+.contacts-block {
+    box-sizing: border-box;
+    width: 250px;
+
+    float: left;
+    margin: 0px;
+    margin-top: 90px;
+    padding: 26px 21px;
+
+    background-color: #ffffff;   /* Временно */
+}
+
+.contacts-block b {
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+
+}
+.contacts-block p {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.write-us {
+    width: 100%;
+}
+
+.map-block .container {
+    position: relative;
+}
+
+.map-block .container::after {
+    position: absolute;
+    top: 85px;
+    left:625px;
+
+    width: 231px;
+    height: 190px;
+
+    background: url("../img/map-icon.png");
+}
+
+
+
+
+
+/* --------- СТИЛИ ФУТЕРА   ----------- */
+
+
+
+
+
+.main-footer {
+    padding: 75px 0;
+}
+.footer-social {
+    width: 240px;
+    float: left;
+
+    margin-right: 80px;
+}
+
+.social-btn {
+    width: 62px;
+    height: 62px;
+    display: inline-block;
+    background: #e1e1e1 url("../img/sprite.png") no-repeat center; ;
+    border-radius: 50%;
+
+    margin-right: 23px;
+
+    font-size: 0px;
+    vertical-align: top;
+    text-decoration: none;
+}
+
+.social-btn:last-child {
+    margin-right: 0;
+}
+
+.social-btn-fb {
+    background-position: -34px -34px;
+}
+.social-btn-vk {
+    background-position: 9px -34px;
+}
+.social-btn-inst {
+    background-position: -77px -34px;
+}
+
+.social-btn-fb:hover,
+.social-btn-vk:hover,
+.social-btn-inst:hover {
+    background-color: #fb565a;
+}
+
+.social-btn-fb:active,
+.social-btn-vk:active,
+.social-btn-inst:active {
+    background-color: #d6494d;
+    box-shadow: inset 0 3px 0 rgba(0,0,0,0.2);
+}
+
+
+.footer-text {
+    float: right;
+}
+
+.footer-text b {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+
+}
+
+.footer-text p {
+    margin: 0;
+    margin-top: 10px;
+
+}
+
+
+
+
+
+
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;}

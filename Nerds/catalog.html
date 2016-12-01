@@ -4,7 +4,9 @@
 <head>
     <meta charset="utf-8">
     <title>Nerds</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/catalog-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
 
@@ -12,13 +14,11 @@
 
     <header class="main-header">
         <div class="container">
-            <figure>
-                <img src="#" alt="Nerds">
-            </figure>
-            <nav class="main-nav">
+            <img src="img/main-logo.png" alt="Nerds" class="main-logo" width="140px" height="57px">
+            <nav class="main-navigation">
                 <ul>
                     <li>
-                        <a href="#">Студия</a>
+                        <a href="index.html">Студия</a>
                     </li>
                     <li>
                         <a href="#">Клиенты</a>
@@ -43,12 +43,22 @@
     </header>
 
     <main>
-        <div class="container">
+        <div class="container clearfix">
             <div class="filter-bar">
                 <form class="fiter-form" action="index.html" method="post">
                     <legend>Стоимость:</legend>
-                    <div class="drag-n-drop">
+                    <div class="price-filter">
+                        <div class="drag-n-drop">
+                        </div>
+                        <label>
+                            От<input type="text" name="price-min" value="0">
+                        </label>
+                        <label>
+                            До<input type="text" name="price-max" value="5000">
+                        </label>
+
                     </div>
+
                     <legend>Сетка:</legend>
                     <label>
                         <input type="radio" name="grid-type" value="adaptive">
@@ -64,26 +74,42 @@
                     </label>
 
                     <legend>Особенности:</legend>
-                        <input type="checkbox" name="slider" value="">
-                            <label for="slider">Слайдер</label>
 
-                        <input type="checkbox" name="features" value="">
-                            <label for="features">Блок преимуществ</label>
+                            <label>
+                                <input type="checkbox" name="slider" value="">
+                                Слайдер
+                            </label>
 
-                        <input type="checkbox" name="news" value="">
-                            <label for="news">Новости</label>
 
-                        <input type="checkbox" name="gallery" value="">
-                            <label for="gallery">Галерея</label>
+                            <label>
+                                <input type="checkbox" name="features" value="">
+                                Блок преимуществ
+                            </label>
 
-                        <input type="checkbox" name="cart" value="">
-                            <label for="cart">Корзина</label>
+
+                            <label>
+                                <input type="checkbox" name="news" value="">
+                                Новости
+                            </label>
+
+
+                            <label>
+                                <input type="checkbox" name="gallery" value="">
+                                Галерея
+                            </label>
+
+
+                            <label>
+                                <input type="checkbox" name="cart" value="">
+                                Корзина
+                            </label>
 
                     <button type="button" class="btn btn-filter">Показать</button>
                 </form>
             </div>
 
             <div class="item-list-block">
+
                 <div class="sorting">
                     <span>Сортировать:</span>
                     <a href="#">По цене</a>
@@ -92,6 +118,7 @@
                     <a href="#">\</a>
                     <a href="#">/</a>
                 </div>
+
                 <div class="item-list">
                     <div class="item">
                         <div class="top-decoration">
@@ -100,12 +127,11 @@
                             <div class="circle"></div>
                         </div>
                         <div class="item-content">
-                            <img src="#" alt="" heigth="240px" width="240px">
                             <div class="item-hover">
                                 <a href="#">
                                     <b>Aviator</b>
                                     <p>Одностраничный макет с авторским дизайном</p>
-                                    <span>8000 р.</span>
+                                    <span class="btn">8000 р.</span>
                                 </a>
                             </div>
                         </div>
@@ -117,12 +143,11 @@
                             <div class="circle"></div>
                         </div>
                         <div class="item-content">
-                            <img src="#" alt="123" heigth="240px" width="240px">
                             <div class="item-hover">
                                 <a href="#">
                                     <b>Sunset</b>
                                     <p>Интернет магазин с личным кабинетом</p>
-                                    <span>10000 р.</span>
+                                    <span class="btn">10000 р.</span>
                                 </a>
                             </div>
                         </div>
@@ -134,12 +159,11 @@
                             <div class="circle"></div>
                         </div>
                         <div class="item-content">
-                            <img src="#" alt="" heigth="240px" width="240px">
                             <div class="item-hover">
                                 <a href="#">
                                     <b>Forte</b>
                                     <p>Отличный макет для личного блога</p>
-                                    <span>5000 р.</span>
+                                    <span class="btn">5000 р.</span>
                                 </a>
                             </div>
                         </div>
@@ -151,12 +175,11 @@
                             <div class="circle"></div>
                         </div>
                         <div class="item-content">
-                            <img src="#" alt="" heigth="240px" width="240px">
                             <div class="item-hover">
                                 <a href="#">
                                     <b>Modern Organic THAI</b>
                                     <p>Сайт для ресторана быстрого питания</p>
-                                    <span>12000 р.</span>
+                                    <span class="btn">12000 р.</span>
                                 </a>
                             </div>
                         </div>
@@ -168,12 +191,11 @@
                             <div class="circle"></div>
                         </div>
                         <div class="item-content">
-                            <img src="#" alt="" heigth="240px" width="240px">
                             <div class="item-hover">
                                 <a href="#">
                                     <b>Avenue</b>
                                     <p>Макет для блога  о путешествиях</p>
-                                    <span>8000 р.</span>
+                                    <span class="btn">8000 р.</span>
                                 </a>
                             </div>
                         </div>
@@ -185,35 +207,36 @@
                             <div class="circle"></div>
                         </div>
                         <div class="item-content">
-                            <img src="#" alt="" heigth="240px" width="240px">
                             <div class="item-hover">
                                 <a href="#">
                                     <b>Dovetail</b>
                                     <p>Интернет-магазин с галереей товаров</p>
-                                    <span>14000 р.</span>
+                                    <span class="btn">14000 р.</span>
                                 </a>
                             </div>
                         </div>
                     </div>
 
                 </div>
-            </div>
 
-            <div class="pagination">
-                <ul>
-                    <li class="active"><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">Следующая</a></li>
-                </ul>
-            </div>
+                <div class="pagination">
+                    <ul>
+                        <li><a href="#" class="btn active">1</a></li>
+                        <li><a href="#" class="btn">2</a></li>
+                        <li><a href="#" class="btn">3</a></li>
+                        <li><a href="#" class="btn">Следующая</a></li>
+                    </ul>
+                </div>
 
+            </div>
 
 
 
         </div>
+
+
         <section class="map-block">
-            <div class="container">
+            <div class="container clearfix">
                 <div class="contacts-block">
                     <b>Nerds design studio</b>
                     <p>
@@ -229,12 +252,16 @@
     </main>
 
     <footer class="main-footer">
-        <div class="container">
-            <a class="social-btn social-btn-fb" href="#" >Фейсбук</a>
-            <a class="social-btn social-btn-vk" href="#" >Вконтакте</a>
-            <a class="social-btn social-btn-inst" href="#" >Инстаграм</a>
-            <p>Давайте дружить, это выгодно!</p>
-            <p>Скидка 10% для друзей из социальных сетей.</p>
+        <div class="container clearfix">
+            <div class="footer-social">
+                <a class="social-btn social-btn-fb" href="#" >Фейсбук</a>
+                <a class="social-btn social-btn-vk" href="#" >Вконтакте</a>
+                <a class="social-btn social-btn-inst" href="#" >Инстаграм</a>
+            </div>
+            <div class="footer-text">
+                <b>Давайте дружить, это выгодно!</b>
+                <p>Скидка 10% для друзей из социальных сетей.</p>
+            </div>
         </div>
     </footer>
 

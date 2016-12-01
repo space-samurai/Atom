@@ -18,13 +18,13 @@
             <nav class="main-navigation">
                 <ul>
                     <li>
-                        <a href="#">Студия</a>
+                        <a href="#" class="active">Студия</a>
                     </li>
                     <li>
                         <a href="#">Клиенты</a>
                     </li>
                     <li>
-                        <a href="#">Магазин</a>
+                        <a href="catalog.html">Магазин</a>
                     </li>
                     <li>
                         <a href="#">Контакты</a>
@@ -37,16 +37,50 @@
             </div>
 
             <div class="slider">
-                <div class="slider-text">
-                    <b>Долго, дорого, скрупулезно.</b>
-                    <p>
-                        Математически выверенный дизайн для вашего
-                        сайта или мобильного приложения.
-                    </p>
-                    <a href="#" class="btn slider-btn">Узнать больше</a>
+                <input type="radio" name="toggle" id="radio-1" checked>
+                <input type="radio" name="toggle" id="radio-2">
+                <input type="radio" name="toggle" id="radio-3">
+
+                <div class="slider-controls">
+                    <label for="radio-1"></label>
+                    <label for="radio-2"></label>
+                    <label for="radio-3"></label>
+                    <!--
+                    <i class="active"></i>
+                    <i></i>
+                    <i></i>-->
                 </div>
-                <div class="slider-image">
-                    <img src="#" alt="">
+
+                <div class="slides">
+                    <div class="slide">
+                        <div class="slide-text">
+                            <b>Долго, дорого, скрупулезно.</b>
+                            <p>
+                                Математически выверенный дизайн для вашего
+                                сайта или мобильного приложения.
+                            </p>
+                            <a href="#" class="btn slider-btn">Узнать больше</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-text">
+                            <b>Любите ли вы математику, как любим ее мы?</b>
+                            <p>
+                                Нашим дизайнерам мы удаляем нейроны, ответственные
+                                за креатив, чтобы дать им возможность все просчитать
+                            </p>
+                            <a href="#" class="btn slider-btn">Узнать больше</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-text">
+                            <b>Только наркотики, только хардкор!</b>
+                            <p>
+                                Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов
+                            </p>
+                            <a href="#" class="btn slider-btn">Узнать больше</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -109,8 +143,6 @@
                 </div>
             </section>
 
-            <!--<hr>-->
-
             <section class="patners-block">
                 <a href="#">
                     <img src="img/partner-1.jpg" alt="" height="120" width="240">
@@ -124,8 +156,6 @@
             </section>
 
         </div>
-
-        <!--<hr>-->
 
         <section class="map-block">
             <div class="container clearfix">
