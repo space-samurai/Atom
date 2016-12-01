@@ -171,7 +171,8 @@ body {
 }
 
 .slider input[type="radio"] {
-    /*position:absolute;*/
+    position:absolute;
+    opacity: 0;
 }
 
 .slider-controls {
