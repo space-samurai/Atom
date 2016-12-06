@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <title>Набор для путешествий «Baxter of California» - Барбершоп "Бородинский"</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style3.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
-<body>
+<body class="content-body">
 
     <header class="main-header">
         <div class="container clearfix">
@@ -30,7 +30,7 @@
     </header>
 
     <main class="container">
-        <div class="item-header">
+        <div class="content-page-header item-header">
             <h1>Набор для путешествий «Baxter of California»</h1>
             <div class="breadcrumbs">
                 <ul>
@@ -42,7 +42,8 @@
 
             </div>
         </div>
-        <div class="item-content clearfix">
+
+        <div class="item-page-content clearfix">
             <section class="item-gallery">
                 <img src="img/item gallery-big-1.png" alt="" width="460px" height="500px">
                 <img src="img/item gallery-1.png" alt="" width="140px" height="150px">
@@ -60,11 +61,11 @@
                         Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.
                     </p>
                 </section >
-                <section class="buy-block">
+                <section class="item-buy-block">
                     <span class="price">2 900 руб.</span>
                     <a href="#" class="btn buy-btn">Купить</a>
                 </section>
-                <section class="item-list">
+                <section class="item-complect">
                     <h2>В набор входят:</h2>
                     <ul>
                         <li>Средство для умывания (50 мл)</li>
@@ -100,6 +101,24 @@
             </section>
         </div>
     </footer>
+
+    <div class="modal-content">
+        <button type="button" class="modal-content-close">Закрыть</button>
+        <h2 class="modal-content-title">Личный кабинет</h2>
+        <p>Введите свой логин и пароль.</p>
+        <form class="login-form" action="index.html" method="post">
+            <input class="icon-user" type="text" name="login" placeholder="Логин">
+            <input class="icon-password" type="password" name="password" placeholder="Пароль">
+            <label class="login-checkbox">
+                <input type="checkbox" name="remember">
+                <span class="checkbox-indicator"></span>
+                Запомните меня
+            </label>
+            <a class="restore" href="#">Я забыл пароль!</a>
+            <button class="btn" type="submit">Войти</button>
+        </form>
+    </div>
+
 </body>
 
 </html>

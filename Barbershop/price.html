@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <title>Магазин - Барбершоп "Бородинский"</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style4.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
-<body>
+<body class="content-body">
 
     <header class="main-header">
         <div class="container clearfix">
@@ -30,7 +30,7 @@
     </header>
 
     <main class="container">
-        <div class="price-header">
+        <div class="content-page-header price-header">
             <h1>Прайс-лист</h1>
             <div class="breadcrumbs">
                 <ul>
@@ -121,6 +121,24 @@
             </section>
         </div>
     </footer>
+
+    <div class="modal-content">
+        <button type="button" class="modal-content-close">Закрыть</button>
+        <h2 class="modal-content-title">Личный кабинет</h2>
+        <p>Введите свой логин и пароль.</p>
+        <form class="login-form" action="index.html" method="post">
+            <input class="icon-user" type="text" name="login" placeholder="Логин">
+            <input class="icon-password" type="password" name="password" placeholder="Пароль">
+            <label class="login-checkbox">
+                <input type="checkbox" name="remember">
+                <span class="checkbox-indicator"></span>
+                Запомните меня
+            </label>
+            <a class="restore" href="#">Я забыл пароль!</a>
+            <button class="btn" type="submit">Войти</button>
+        </form>
+    </div>
+
 </body>
 
 </html>

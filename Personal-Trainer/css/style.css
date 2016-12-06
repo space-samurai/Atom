@@ -1,0 +1,677 @@
+body {
+    min-width: 1200px;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: #f2f2f2;
+    color: #000000;
+
+
+    font-family: "Open Sans", "Arial", sans-serif;
+    /* ------ font-family: 'Roboto', sans-serif; ------- */
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.container {
+    width: 1130px;
+
+    margin: 0 auto;
+    padding: 0 35px;
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------   HEADER  ------------- */
+
+
+header {
+    background:#46565e url("../img/header-image.jpg") no-repeat center;
+    color: #ffffff;
+}
+
+.navigation-block {
+    border-bottom: 2px solid #7e898f;
+    background-color: transparent;
+}
+.navigation-block:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main-navigation {
+    text-align: right;
+}
+
+.main-navigation ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    font-size: 0px;
+}
+
+.main-navigation li {
+    display: inline-block;
+    vertical-align: top;
+
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.main-navigation a {
+    display: block;
+
+    padding:20px;
+    padding-top: 40px;
+
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.main-navigation a:hover {
+    color: #12afff;
+}
+
+.main-navigation a:active {
+    color: #ff8e00;
+}
+
+
+
+
+
+
+
+
+
+
+/* ------ SLIDER STYLES ------- */
+
+
+.slider {
+    position: relative;
+
+    height: 840px;
+
+}
+
+
+
+
+.slide {
+    margin: 0;
+    padding: 0;
+    padding-top: 240px;
+    padding-bottom: 300px;
+}
+
+.slide h1 {
+    font-size: 60px;
+    line-height: 60px;
+
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.slide p {
+    margin-bottom: 45px;
+
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 28px;
+
+}
+
+
+
+
+
+
+
+
+/* ------ SLIDER   CONTROLS  STYLES ------- */
+
+
+
+
+.control-arrow {
+    position: absolute;
+    top: 50%;
+
+    width: 56px;
+    height: 56px;
+
+    margin-top: -30px;
+
+    border: 2px solid #7e898f;
+    border-radius: 50%;
+}
+
+.control-arrow::before,
+.control-arrow::after {
+    content: "";
+
+    position: absolute;
+
+    width: 20px;
+    height: 2px;
+
+    background-color: #7e898f;
+}
+.control-arrow:nth-child(1)::before {
+    transform: rotate(45deg);
+
+    bottom: 20px;
+    right: 20px;
+}
+
+.control-arrow:nth-child(1)::after {
+    transform: rotate(-45deg);
+
+    top: 20px;
+    right: 20px;
+}
+
+.control-arrow:nth-child(2)::after {
+    transform: rotate(45deg);
+
+    top: 20px;
+    left: 20px;
+}
+
+.control-arrow:nth-child(2)::before {
+    transform: rotate(-45deg);
+
+    bottom: 20px;
+    left: 20px;
+}
+
+.control-arrow:nth-child(1)::before,
+.control-arrow:nth-child(2)::before {
+    bottom: 20px;
+}
+.control-arrow:nth-child(1)::after,
+.control-arrow:nth-child(2)::after {
+    top: 20px;
+}
+
+
+.control-arrow:nth-child(1) {
+    left: 50px;
+}
+
+.control-arrow:nth-child(2) {
+    right: 50px;
+}
+
+.control-arrow:hover {
+    border-color: #12afff;
+}
+.control-arrow:active {
+    background-color: #12afff;}
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------    MAIN CONTENT      ------------ */
+
+
+
+
+/* -------------    FLEX-COLUMNS STYLES      ------------ */
+
+
+.training-programs {
+    height: 240px;
+
+    font-size: 0;
+    color: #ffffff;
+    background-color: #595959;
+}
+
+.training-program {
+    display: inline-block;
+    vertical-align: bottom;
+
+    height: 100%;
+    width: 25%;
+    min-width: 300px;
+
+    margin: 0;
+}
+
+
+.training-program .hover {
+    position: relative;
+
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+
+    padding: 40px 30px 40px 50px;
+
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.training-program .hover:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-top: 2px solid #D17400;
+}
+.training-program h3 {
+    margin: 0;
+    margin-bottom: 10px;
+
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 600;
+
+}
+.training-program p {
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-size: 12px;
+    line-height: 12px;
+
+}
+
+
+.training-programs .training-program:nth-child(1) {
+    background: url("../img/cardio.jpg") no-repeat center;
+}
+.training-program:nth-child(2) {
+    background: url("../img/gain.jpg") no-repeat center;
+}
+.training-program:nth-child(3) {
+    background: url("../img/crossfit.jpg") no-repeat center;
+}
+.training-program:nth-child(4) {
+    background: url("../img/nutrition.jpg") no-repeat center;
+}
+
+/* -------------          ------------ */
+
+main .container {
+    text-align: center;
+}
+
+.container h2,
+.container .quote {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    margin:0;
+    padding-top: 100px;
+}
+
+.container h2 + p {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+/* -------------          ------------ */
+
+
+.about-me-left {
+    float: left;
+    width: 548px;
+    height: 530px;
+    background: #f2f2f2 url("../img/big-portrait.jpg") no-repeat center;
+}
+
+.about-me-right {
+    float: right;
+    width: 548px;
+
+    text-align: left;
+}
+
+
+/* -------------          ------------ */
+
+.features {
+    background-color: #fbfbfb;
+}
+
+.feature {
+    float: left;
+
+    width: 250px;
+
+    margin-right: 43px;
+    padding-top: 95px;
+    margin-bottom: 100px;
+}
+
+.feature:last-child {
+    float: right;
+    margin-right: 1px;
+}
+
+/* -------------          ------------ */
+
+.achieve {
+    float: left;
+
+    box-sizing: border-box;
+    width: 350px;
+    min-height: 340px;
+
+    margin-right: 40px;
+    margin-bottom: 120px;
+    padding-top: 130px;
+
+    background-color: #ffffff;
+    border-bottom: 6px solid #12afff;
+}
+
+.achieve:last-child {
+    margin-right: 0;
+}
+
+.achieve:hover {
+    background: #0e1015;
+    color: #ffffff;
+
+    border-bottom-width: 35px;
+}
+
+
+
+/* -------------          ------------ */
+
+
+.team {
+    background-color: #313340;
+    color: #ffffff;
+}
+
+.team-member {
+    float: left;
+
+    width: 250px;
+
+    margin-right: 43px;
+    padding-top: 95px;
+    margin-bottom: 100px;
+}
+
+.team-member:last-child {
+    float: right;
+    margin-right: 1px;
+}
+
+/* -------------          ------------ */
+
+
+.call-to-action {
+    background-color: #0e1015;
+    color: #ffffff;
+}
+.call-to-action-text {
+    float: left;
+    width: 780px;
+    padding: 60px 0;
+}
+.call-to-action-button {
+    float: right;
+    padding: 65px 0;
+}
+
+/* -------------          ------------ */
+
+.gallery-selector a {
+    display: inline-block;
+
+    vertical-align: middle;
+
+    margin-bottom: 50px;
+}
+
+.gallery figure {
+    width: 1130px;
+    height: 380px;
+
+    margin: 0;
+    margin-bottom: 180px;
+
+    background-color: #b3b3b3;
+}
+
+/* -------------          ------------ */
+
+.count-col {
+    float: left;
+
+    width: 250px;
+
+    margin: 0;
+    margin-right: 43px;
+}
+
+.count-col:last-child {
+    float: right;
+    margin-right: 1px;
+}
+
+.count {
+    padding-bottom: 85px;
+    border-bottom: 2px solid #575757 ;
+}
+/* -------------          ------------ */
+
+
+
+
+.pricing-table {
+    float: left;
+
+    width: 350px;
+
+    margin-right: 40px;
+    margin-bottom: 125px;
+
+    background-color: #ffffff;
+
+}
+
+.pricing-table:last-child {
+    float: right;
+    margin-right: 0;
+}
+
+
+
+/* -------------          ------------ */
+
+
+.testimonials {
+    padding-bottom: 100px;
+
+    background-color: #272727;
+    color: #ffffff;
+}
+.testimonial-work {
+
+}
+/* -------------          ------------ */
+.partners {
+    background-color: #12afff;
+    color: #ffffff;
+
+}
+
+.partner {
+    float: left;
+
+    width: 350px;
+
+    margin-right: 40px;
+}
+
+.partner:last-child {
+    margin-right: 0;
+}
+
+/* -------------          ------------ */
+.subscription-form {
+    padding-top: 115px;
+    padding-bottom: 125px;
+}
+.subscription {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.subscription input {
+    display: inline-block;
+    width: 384px;
+    margin-bottom: 40px;
+}
+
+.subscription input:first-child {
+    margin-right: 40px;
+}
+
+ input {
+    padding: 10px 20px;
+
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.2);
+
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 600;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------    FOOTER STYLES     ------------ */
+
+
+footer {
+    background-color: #0e1015;
+}
+
+
+
+
+
+
+
+
+/* -------------   BUTTON STYLES     ------------ */
+
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+
+    padding: 15px 30px;
+    margin-right: 30px;
+
+    border: 2px solid #12afff;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+
+    background-color: #12afff;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 600;
+
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.transparent-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover {
+    background-color: #ff8e00;
+    border-color: #e07d00;
+}
+.btn:active {
+    background-color: #d17400;
+    border-color: #ff8e00;
+}
+
+
+.transparent-btn:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: #ff8e00;
+}
+.transparent-btn:active {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: #D17400;
+}
+
+.btn-min {
+    position: absolute;
+    left: 50px;
+    bottom: 40px;
+
+    min-width: 150px;
+    width: 50%;
+
+    padding: 10px 20px;
+    margin-right: 0;
+
+    border-radius: 30px;
+}
+
+.subscribe-btn {
+    padding: 10px 30px;
+    margin-right: 0;
+
+}
+
+/* -------------   others     ------------ */
+
+
+
+
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;}
+}

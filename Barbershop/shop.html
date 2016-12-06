@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <title>Магазин - Барбершоп "Бородинский"</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style2.css">
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
-<body>
+<body class="content-body">
 
     <header class="main-header">
         <div class="container clearfix">
@@ -30,7 +30,7 @@
     </header>
 
     <main class="container">
-        <div class="shop-header">
+        <div class="content-page-header shop-header">
             <h1>Средства для ухода</h1>
             <div class="breadcrumbs">
                 <ul>
@@ -48,53 +48,62 @@
                     <form class="fiter-form" action="index.html" method="get">
                         <legend>Производители:</legend>
 
-                            <label>
+                            <label class="checkbox">
                                 <input type="checkbox" name="baxter-of-california" value="" checked>
-                                <span>Baxter of California</span>
+                                <span class="checkbox-indicator"></span>
+                                Baxter of California
                             </label>
                             <label>
                                 <input type="checkbox" name="mr-natty" value="">
-                                <span>Mr Natty</span>
+                                <span class="checkbox-indicator"></span>
+                                Mr Natty
                             </label>
                             <label>
                                 <input type="checkbox" name="suavecito" value="" checked>
-                                <span>Suavecito</span>
+                                <span class="checkbox-indicator"></span>
+                                Suavecito
                             </label>
                             <label>
-                                <input type="checkbox" name="malin-goetz" value="">
-                                <span>Malin+Goetz</span>
+                                <input type="checkbox" name="malin-goetz">
+                                <span class="checkbox-indicator"></span>
+                                Malin+Goetz
                             </label>
                             <label>
                                 <input type="checkbox" name="murrays" value="">
-                                <span>Murray’s</span>
+                                <span class="checkbox-indicator"></span>
+                                Murray’s
                             </label>
                             <label>
                                 <input type="checkbox" name="american-crew" value="" checked>
-                                <span>American Crew</span>
+                                <span class="checkbox-indicator"></span>
+                                American Crew
                             </label>
 
                         <legend class="legend-group">Группы товаров:</legend>
                         <label>
                             <input type="radio" name="item-group" value="Бритвенные принадлежности">
-                            <span>Бритвенные принадлежности</span>
+                            <span class="radio-indicator"></span>
+                            Бритвенные принадлежности
                         </label>
 
                         <label>
                             <input type="radio" name="item-group" value="Средства для ухода" checked>
-                            <span>Средства для ухода</span>
+                            <span class="radio-indicator"></span>
+                            Средства для ухода
                         </label>
 
                         <label>
                             <input type="radio" name="item-group" value="Аксессуары">
-                            <span>Аксессуары</span>
+                            <span class="radio-indicator"></span>
+                            Аксессуары
                         </label>
 
                         <button type="button" class="btn btn-filter">Показать</button>
                     </form>
             </div>
 
-            <div class="right-side">
-                <section class="item-list">
+            <div class="shop-right-side">
+                <section class="shop-item-list">
                     <div class="item">
                         <img  src="img/item-1.png" alt="" class="item-img" width="220px" height="165px" href>
                         <div class="item-name">
@@ -103,7 +112,7 @@
                                 <span>«Baxter of California»</span>
                             </a>
                         </div>
-                        <div class="buy-block">
+                        <div class="shop-buy-block">
                             <span class="price">2 900 руб.</span>
                             <a href="item.html" class="btn buy-btn">Купить</a>
                         </div>
@@ -117,7 +126,7 @@
                                 <span>«Baxter of California»</span>
                             </a>
                         </div>
-                        <div class="buy-block">
+                        <div class="shop-buy-block">
                             <span class="price">750 руб.</span>
                             <a href="#" class="btn buy-btn">Купить</a>
                         </div>
@@ -131,7 +140,7 @@
                                 <span>«SUAVECITO»</span>
                             </a>
                         </div>
-                        <div class="buy-block">
+                        <div class="shop-buy-block">
                             <span class="price">290 руб.</span>
                             <a href="#" class="btn buy-btn">Купить</a>
                         </div>
@@ -145,7 +154,7 @@
                                 <span>«American crew»</span>
                             </a>
                         </div>
-                        <div class="buy-block">
+                        <div class="shop-buy-block">
                             <span class="price">500 руб.</span>
                             <a href="img/item-1.png" class="btn buy-btn">Купить</a>
                         </div>
@@ -159,7 +168,7 @@
                                 <span>«AMERICAN CREW»</span>
                             </a>
                         </div>
-                        <div class="buy-block">
+                        <div class="shop-buy-block">
                             <span class="price">300 руб.</span>
                             <a href="#" class="btn buy-btn">Купить</a>
                         </div>
@@ -173,7 +182,7 @@
                                 <span>«Baxter of California»</span>
                             </a>
                         </div>
-                        <div class="buy-block">
+                        <div class="shop-buy-block">
                             <span class="price">3 900 руб.</span>
                             <a href="#" class="btn buy-btn">Купить</a>
                         </div>
@@ -217,6 +226,24 @@
         </div>
 
     </footer>
+
+    <div class="modal-content">
+        <button type="button" class="modal-content-close">Закрыть</button>
+        <h2 class="modal-content-title">Личный кабинет</h2>
+        <p>Введите свой логин и пароль.</p>
+        <form class="login-form" action="index.html" method="post">
+            <input class="icon-user" type="text" name="login" placeholder="Логин">
+            <input class="icon-password" type="password" name="password" placeholder="Пароль">
+            <label class="login-checkbox">
+                <input type="checkbox" name="remember">
+                <span class="checkbox-indicator"></span>
+                Запомните меня
+            </label>
+            <a class="restore" href="#">Я забыл пароль!</a>
+            <button class="btn" type="submit">Войти</button>
+        </form>
+    </div>
+
 </body>
 
 </html>
