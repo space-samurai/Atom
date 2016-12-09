@@ -1,0 +1,56 @@
+.stats {
+    .container();
+    background-color: rgba(156, 209, 226, 0.34);/*Временно*/
+}
+
+.stats__header {
+    min-height: 130px; /*Временно*/
+
+    padding: 27px 28px 26px 38px;
+}
+
+.stats__items {
+    width: 100%; /*Временно*/
+    height: 320px; /*Временно мин хэйт для таблицы не работает*/
+}
+
+@media @tablet-widths {
+
+    .stats {
+        position: relative;
+        z-index: 1;
+        margin-top: -184px;
+    }
+
+    .stats__header {
+        .clearfix();
+        padding: 31px 0 24px 0;
+    }
+
+    .stats__items {
+        .clearfix();
+        display: block;
+    }
+}
+
+@media @desktop-widths {
+
+    .stats {
+        .clearfix();
+        margin-top: -159px;
+    }
+
+    .stats__header {
+        float: left;
+        width: 240px;
+        min-height: 263px;/*Временно*/
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .stats__items {
+        float: right;
+        display: block;
+        width: 640px;
+    }
+}
